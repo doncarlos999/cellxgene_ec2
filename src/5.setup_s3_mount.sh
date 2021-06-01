@@ -13,6 +13,7 @@ sudo make
 sudo make install
 )
 sudo mkdir /s3bucket
+sudo cp -r ~/.aws /root
 sudo echo "$S3_BUCKET /s3bucket fuse.s3fs _netdev,allow_other 0 0" | sudo tee -a /etc/fstab
 sudo mount -a
 
