@@ -1,0 +1,8 @@
+[Unit]
+Description=cellxgene script
+
+[Service]
+ExecStart=/home/ubuntu/cellxgene_ec2/src/startup.sh
+
+[Install]
+WantedBy=multi-user.target

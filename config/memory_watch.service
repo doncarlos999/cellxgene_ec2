@@ -1,0 +1,8 @@
+[Unit]
+Description=memory watch script
+
+[Service]
+ExecStart=/home/ubuntu/cellxgene_ec2/src/memory_watch.sh
+
+[Install]
+WantedBy=multi-user.target
