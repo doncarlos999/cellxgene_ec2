@@ -10,7 +10,6 @@ Add /scratch EFS File system as /scratch
 
 Security group that had port 80 TCP open to all for HTTP and port 22 open to all for SSH
 
-Run `src/1.setup.sh` to install awscli and then configure aws credentials
 
 Set environmental variables:
 
@@ -20,4 +19,4 @@ Set environmental variables:
 
 `export S3_BUCKET=<desired s3 bucket to mount>` 
 
-`src/2.setup.sh` to finish set up
+Run scripts in numerical order
