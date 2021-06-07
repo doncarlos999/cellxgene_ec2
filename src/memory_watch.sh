@@ -1,4 +1,4 @@
-i#!/bin/bash -e
+#!/bin/bash -e
 start_time="$(echo $(date '+%Y-%m-%d_%H-%M-%S'))"
 echo $(echo "      date     time $(free -m | grep total | sed -E 's/^    (.*)/\1/g')") > /home/ubuntu/logs/memory/mem_log_${start_time}.log
 while true; do
