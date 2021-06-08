@@ -4,6 +4,7 @@ set -exu
 mkdir -p ${HOME}/logs/memory
 sudo ln -s ${HOME}/cellxgene_ec2/config/memory_watch.service \
 	/etc/systemd/system/memory_watch.service
+sudo systemctl enable memory_watch
 sudo systemctl start memory_watch
 
 
